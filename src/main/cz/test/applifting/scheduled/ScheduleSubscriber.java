@@ -8,6 +8,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.concurrent.Flow;
 
+/**
+ * Subscriber for endpoints for following monitoring.
+ */
 @Slf4j
 @Component
 public class ScheduleSubscriber implements Flow.Subscriber<Endpoint> {

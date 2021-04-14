@@ -17,6 +17,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.SubmissionPublisher;
 
+/**
+ * {@link MonitoringService} implementation
+ */
 @Service
 @Slf4j
 public class MonitoringServiceImpl implements MonitoringService {
@@ -128,7 +131,7 @@ public class MonitoringServiceImpl implements MonitoringService {
      private User validateUser(final String token) {
           return userRepository.findByToken(token).orElseThrow(() -> {
                log.error("Couldn't find a user by token {}", token);
-               throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "User was not found.");
+               throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Couldn't find a user by this token");
           });
      }
 }

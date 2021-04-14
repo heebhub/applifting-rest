@@ -46,6 +46,6 @@ public class Endpoint {
      @ToString.Exclude
      @EqualsAndHashCode.Exclude
      //see https://stackoverflow.com/questions/17445657/hibernate-onetomany-java-lang-stackoverflowerror/55425076
-     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+     @ManyToOne(fetch = FetchType.EAGER)
      private User user;
 }

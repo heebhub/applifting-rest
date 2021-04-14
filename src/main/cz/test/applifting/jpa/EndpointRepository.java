@@ -16,9 +16,8 @@ import java.util.Optional;
  */
 public interface EndpointRepository extends JpaRepository<Endpoint, Long> {
      List<Endpoint> findAll();
-
      Optional<Endpoint> findEndpointByIdAndUser(final Long id, final User user);
-
+     Optional<Endpoint> findEndpointByUrl(final String url);
      Optional<Endpoint> findEndpointById(final Long id);
 
      @Modifying
