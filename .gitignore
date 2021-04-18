@@ -28,5 +28,8 @@ hs_err_pid*
 # target
 /target/
 
+# iml
+applifting.iml
 
-/applift-rest.iml
+# maven
+/.mvn/
