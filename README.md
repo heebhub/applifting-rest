@@ -12,7 +12,7 @@ docker compose up --build
 That's all! :sunglasses:
 
 ## Specifications
-The service is written in Java 12 with Spring Boot and MySQL database. Before the application starts, Flyway (the database migration tool) creates tables to provide the correct order of the schema creation. Javadoc and logs are included.
+The service is written in Java 12 with Spring Boot framework and MySQL database. Before the application starts, Flyway (the database migration tool) creates tables to provide the correct order of the schema creation. Javadoc and logs are included.
 
 ## REST Endpoint list
 The API runs on http://localhost:8080/. To use the service, you need to add a custom HTTP header: `accessToken`. Available UUIDs are:
