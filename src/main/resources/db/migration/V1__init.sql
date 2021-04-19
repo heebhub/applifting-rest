@@ -34,7 +34,7 @@ create table user
     charset = utf8mb4;
 
 INSERT INTO monitoring_system.user (id, username, email, uuid) VALUES (1, 'abc', 'abc@yahoo.com', '07618a19-b17c-4437-8619-505af0f6906d');
-INSERT INTO monitoring_system.user (id, username, email, uuid) VALUES (2, 'def', 'def@steam.com', '0c360165-b418-4caa-acea-92be46dc15a0');
+INSERT INTO monitoring_system.user (id, username, email, uuid) VALUES (2, 'def', 'def@gmail.com', '0c360165-b418-4caa-acea-92be46dc15a0');
 INSERT INTO user_sequence (next_val) VALUES (3);
 
 create table endpoint

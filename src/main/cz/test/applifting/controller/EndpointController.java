@@ -31,7 +31,7 @@ public class EndpointController {
     }
 
      /**
-      * Gets an endpoint by its id
+      * Gets an endpoint by its id.
       *
       * @param id              selected endpoint's id
       * @param token           user's token
@@ -45,7 +45,7 @@ public class EndpointController {
      }
 
      /**
-      * Gets the endpoint by its id and user's token.
+      * Get 10 recent results for selected endpoint.
       *
       * @param id              selected endpoint's id
       * @param token           user's token
